@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+  overflow-x: hidden;
+}
+:root {
+    --nav-height: 5rem;  
+  }
+  
+  *, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  ul > li > a {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-decoration: none;
+  /*   background: pink; */
+    position: relative;
+  }
+  
+  .left-links > li > a::after {
+    content:'';
+    background-color: white;
+    position: absolute;
+    bottom: 2;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    transform:  scaleX(0);
+    transition: all .3s ease;
+  }
+  
+  .left-links > li > a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1550px;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar {
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0);
+  }
+  
+  .navlink-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 5rem;
+    min-height: calc(100vh - var(--nav-height));
+    background-color: pink;
+    display: grid;
+    place-content: center;
+    background-image:url('https://assets.cntraveller.in/photos/61fa89415dabee8b6de788ed/master/pass/valentines%20day%20restaurants%20mumbai%20lead.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*   filter: blur(5px); */
+  }
+  form > input {
+    padding: .4rem;
+  }
+  
+  form > select {
+    padding: .6rem;
+    /* padding-top: 1.1rem; */
+   margin-top: 1rem;
+   margin-bottom: .5rem;
+  }
+  
+  form > .submitBtn {
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    color: black;
+  /*   background-color: transparent; */
+    background-color: RGBA(12,0,244,0.8);
+    transition: all .3s ease;
+  }
+  
+  form > .submitBtn:hover {
+    background: black;
+    color: black;
+  }
+  
+  form > textarea {
+    padding: .5rem 1rem;
+    margin-top: .8rem;
+  }
+  
+  .cta {
+    background-color: RGBA(12,0,244);
+    color: white;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+  }
+  
+  .cta:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-color: white;
+  }
+  .cta-sec {
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+  }
+  
+  .cta-sec:hover {
+    background-color: white;
+    color: black;
+  }

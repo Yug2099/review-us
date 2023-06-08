@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <div class="container" style="display:static;">
+        <div class="popup" id="popup">
+            <h2>Signup Form</h2>
+
+            <form action="/signup" method="POST">
+                <div style="justify-content: center;">
+                  <input type="text" placeholder="Name"
+                      style="width: 250px; height: 35px; margin-bottom: 20px;">
+                </div>
+                <div style="justify-content: center;">
+                    <input placeholder="Email Address"
+                        style="width: 250px; height: 35px; margin-bottom: 20px;">
+                </div>
+                <div style="justify-content: end; display: relative;">
+                    <input type="password" name="pass" id="pass" placeholder="Password"
+                        style="width: 250px; height: 35px; margin-bottom: 10px;">
+                </div>
+                <input class="bttn" type="submit" value="Submit"></input>
+                <a href="signin.html">Already registered? Login Here</a>
+            </form>
+            
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = setTimeout(openPopup, 1000);
+    let popup = document.getElementById("popup");
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+
+
+</script>
+<script>
+    $(document).ready(function () {
+
+        function testFunc() {
+            $('.rname').style.visibility = 'hidden';
+        }
+
+    });
+</script>
+
+</html>

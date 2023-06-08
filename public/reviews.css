@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+  overflow-x: hidden;
+}
+:root {
+    --nav-height: 5rem;  
+  }
+  
+*, *::before, *::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul > li > a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+/*   background: pink; */
+  position: relative;
+}
+
+.left-links > li > a::after {
+  content:'';
+  background-color: white;
+  position: absolute;
+  bottom: 2;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  transform:  scaleX(0);
+  transition: all .3s ease;
+}
+
+.left-links > li > a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1550px;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0);
+}
+
+.navlink-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews_container {
+  margin: 4rem auto;
+  width: 80%;
+  height: 70%;
+  background-color: black;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.reviews_container .review {
+  background-color: lightcoral;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.review_name,
+.review_type,
+.review_rating,
+.review_review {
+  display: flex;
+  gap: 1rem;
+}

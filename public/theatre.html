@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="theatre.css">
+  <title>Theatre Review</title>
+</head>
+
+<body>
+  <nav class='navbar container'>
+    <div class="navlink-left">
+      <ul class="left-links">
+        <li><a href="first.html">Home</a></li>
+        <li><a href="resort.html">Resort & Hotel</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="theatre.html">Theatre</a></li>
+      </ul>
+    </div>
+    <div class="navlink-right">
+      <ul>
+        <li><a class="cta-sec" href="suggest.html">Suggestion</a></li>
+        <li><a class="cta" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <form action="/res" method="post" class="container">
+    Theatre Name: <input type="text" name="rname" id="rname"><br>
+    Ratings:<label for="id1">Give a rating:</label>
+    <select name="Ratings" id="Ratings">
+      <option value="1 star">Select</option>
+      <option value="1 star">1 star</option>
+      <option value="2 star">2 stars</option>
+      <option value="3 star">3 stars</option>
+      <option value="4 star">4 stars</option>
+      <option value="5 star">5 stars</option>
+    </select>
+    Review:<label for="abc"></label>
+    <textarea id="Review" name="Review" rows="4" cols="50"></textarea>
+    <input class="submitBtn" type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
